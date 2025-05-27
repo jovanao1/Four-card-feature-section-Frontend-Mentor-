@@ -1,0 +1,135 @@
+body {
+    background-color: rgb(242, 235, 235);
+}
+
+#a, #b {
+    color: grey;
+    font-size: 40px;
+}
+
+#b {
+    color: rgb(84, 82, 82);
+    font-weight: bold;
+}
+
+.naslov {
+    color: rgb(84, 82, 82);
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#c, .p {
+    color: grey;
+    font-size: large;
+}
+
+#prva, #a, #b, #c {
+    flex-direction: column;
+    position: relative;
+    margin: auto;
+    width: 70%;
+    text-align: center;
+    padding: 5px;
+}
+
+#prva {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#kontejner1 {
+     border-top: 5px solid aquamarine;
+}
+
+#kontejner2 {
+     border-top: 5px solid red;
+}
+
+#kontejner3 {
+     border-top: 5px solid orange;
+}
+
+#kontejner4 {
+     border-top: 5px solid blue;
+}
+
+#kontejner1, #kontejner2, #kontejner3, #kontejner4 {
+    padding: 20px;
+    background-color: white;
+    margin: 20px;
+    height: 20vh;
+    position: relative;
+    border-radius: 7%;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+img {
+    position: absolute;
+    bottom: 30px;
+    right: 20px;
+    width: 50px;;
+}
+
+#kolone {
+    display: flex;
+}
+
+#kont2, #kontejner1, #kontejner4 {
+    width: 33%;
+    position: relative;
+    margin: auto;
+}
+
+#kontejner2, #kontejner3 {
+    width: 80%;
+}
+
+#kontejner1, #kontejner4 {
+    width: 25%;
+}
+
+#kont2 {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#kontejner1 {
+    margin-right: 0;
+}
+
+#kontejner4 {
+    margin-left: 0;
+}
+
+@media screen and (max-width: 750px) {
+    #prva, #kolone {
+        display: flex;
+        flex-direction: column;
+    }
+    #kontejner1, #kont2, #kontejner4 {
+        position: relative;
+        margin: auto;
+        padding: 0;
+        width: 80%;
+    }
+    #kont2 {
+        width: 85%;
+        margin-left: 14px;
+    }
+    #kontejner1, #kontejner4 {
+        height: 170px;
+    }
+    #a, #b, .naslov {
+        font-size: larger;
+    }
+    #c, .p {
+        font-size: medium;
+    }
+    #a, #b, #c {
+        width: 100%;
+    }
+    #kontejner1 .naslov, #kontejner1 .p, #kontejner4 .naslov, #kontejner4 .p {
+        margin-left: 15px;
+        margin-top: 10px;
+    }
+}
